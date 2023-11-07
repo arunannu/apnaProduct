@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import ApnaProduct from "./Component/ApnaProduct";
-function App() {
+const App = () => {
   const productList = [
     { title: "Car", date: new Date(2023, 1, 17), amount: 230000 },
     { title: "Tractor", date: new Date(2023, 1, 18), amount: 240000 },
@@ -10,12 +9,10 @@ function App() {
   ];
   return (
     <>
-    {/* <div className="App"> */}
-    
-      <h1>This is Arun Kushwaha.</h1>
-      {/* <p>{date}</p>
-      <p>{product}</p>
-      <p>{amount}</p> */}
+      <div>
+        <h1>Let's get started.</h1>
+      </div>
+
       <ApnaProduct
         title={productList[0].title}
         date={productList[0].date}
@@ -36,9 +33,8 @@ function App() {
         date={productList[3].date}
         amount={productList[3].amount}
       />
-    {/* </div> */}
-</>
+    </>
   );
-}
+};
 
 export default App;
