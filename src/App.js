@@ -1,5 +1,6 @@
-import "./App.css";
+import React from "react";
 import ApnaProduct from "./Component/ApnaProduct";
+
 const App = () => {
   const productList = [
     { title: "Car", date: new Date(2023, 1, 17), amount: 230000 },
