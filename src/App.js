@@ -10,7 +10,7 @@ const App = () => {
   ];
   return (
     <>
-      <NewExpense/>
+      <NewExpense />
       <ApnaProduct
         title={productList[0].title}
         date={productList[0].date}

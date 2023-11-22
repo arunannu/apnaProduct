@@ -5,21 +5,21 @@ const ApnaProduct = (props) => {
   const [amount, setTitle] = useState(props.amount);
 
   const click = () => {
-    setTitle(100)
+    setTitle(100);
 
     console.log(amount);
   };
 
   return (
     <div className="outerDiv">
-    <div className="main-div">
-      <ApnaDate date={props.date} />
+      <div className="main-div">
+        <ApnaDate date={props.date} />
 
-      <div id="title">{props.title}</div>
-      <div id="amount">${amount}</div>
+        <div id="title">{props.title}</div>
+        <div id="amount">${amount}</div>
 
-      <button onClick={click}>Change-Expense</button>
-    </div>
+        <button onClick={click}>Change-Expense</button>
+      </div>
     </div>
   );
 };

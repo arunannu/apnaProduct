@@ -1,27 +1,23 @@
-
-.newExpense{
-    width: 1000px;
-    height: 250px;
-    border: 5px solid black;
-    border-radius: 20px;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: gray;
-    position: relative;
-    left: 300px;
-
-    
+.newExpense {
+  width: 1000px;
+  height: 250px;
+  border: 5px solid black;
+  border-radius: 20px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+  position: relative;
+  left: 300px;
 }
-input{
-    padding: 10px;
-    margin: 20px;
-    
+input {
+  padding: 10px;
+  margin: 20px;
 }
-label{
-    padding: 20px;
+label {
+  padding: 20px;
 }
-.button{
-    padding:7px;
-    position: relative;
-    top: 5px;
+.button {
+  padding: 7px;
+  position: relative;
+  top: 5px;
 }
