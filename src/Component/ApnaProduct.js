@@ -1,24 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Apna.css";
 import ApnaDate from "./ApnaDate";
 const ApnaProduct = (props) => {
-  // //const date = new Date(21, 9, 2023);
-  // const day = props.date.toLocaleString("en-US", { day: "2-digit" });
-  // const month = props.date.toLocaleString("en-US", { month: "long" });
-  // const year = props.date.getFullYear();
+  const [amount, setTitle] = useState(props.amount);
+
   const click = () => {
-    console.log("deleted-expenses");
+    setTitle(100)
+
+    console.log(amount);
   };
 
   return (
     <div className="main-div">
-      
-        <ApnaDate date={props.date} />
-        
-        <div id="title">{props.title}</div>
-        <div id="amount">₹{props.amount}</div>
-      
-      <button onClick={click}>Delete-Expense</button>
+      <ApnaDate date={props.date} />
+
+      <div id="title">{props.title}</div>
+      <div id="amount">${amount}</div>
+
+      <button onClick={click}>Change-Expense</button>
     </div>
   );
 };
