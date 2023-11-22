@@ -1,6 +1,6 @@
 import React from "react";
 import ApnaProduct from "./Component/ApnaProduct";
-
+import NewExpense from "./Component/NewApnaExpense/NewExpense";
 const App = () => {
   const productList = [
     { title: "Car", date: new Date(2023, 1, 17), amount: 230000 },
@@ -10,10 +10,7 @@ const App = () => {
   ];
   return (
     <>
-      <div>
-        <h1>Let's get started.</h1>
-      </div>
-
+      <NewExpense/>
       <ApnaProduct
         title={productList[0].title}
         date={productList[0].date}

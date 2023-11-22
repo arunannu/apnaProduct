@@ -68,3 +68,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- const [titelChanged , setTitleChanged] = useState("");
+    const [amountChanged , setAmountChanged] = useState("");
+    const [dateChanged , setDateChanged] = useState("");
+    const onChangeTitleHandler = (event) => {
+        setTitleChanged(event.target.value)
+        console.log(event.target.value)
+    }
+    const onChangeAmountHandler = (event) => {
+        setAmountChanged(event.target.value)
+    
+    }
+    const onChangeDateHandler = (event) => {
+        setDateChanged(event.target.value)        
+    
+    } -->

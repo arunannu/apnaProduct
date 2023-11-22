@@ -11,6 +11,7 @@ const ApnaProduct = (props) => {
   };
 
   return (
+    <div className="outerDiv">
     <div className="main-div">
       <ApnaDate date={props.date} />
 
@@ -18,6 +19,7 @@ const ApnaProduct = (props) => {
       <div id="amount">${amount}</div>
 
       <button onClick={click}>Change-Expense</button>
+    </div>
     </div>
   );
 };
