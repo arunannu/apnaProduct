@@ -1,29 +1,35 @@
 import React, { useState } from "react";
 import "./NewApnaExpense.css";
+
 const NewApnaExpense = (props) => {
-  const [titelChanged, setTitleChanged] = useState("");
+  const [titleChanged, setTitleChanged] = useState("");
   const [amountChanged, setAmountChanged] = useState("");
   const [dateChanged, setDateChanged] = useState("");
 
   const onChangeTitleHandler = (event) => {
     setTitleChanged(event.target.value);
   };
+
   const onChangeAmountHandler = (event) => {
     setAmountChanged(event.target.value);
   };
+
   const onChangeDateHandler = (event) => {
     setDateChanged(event.target.value);
   };
+
   const fromSubmit = (event) => {
     event.preventDefault();
 
     const expenseData = {
-      title: titelChanged,
+      title: titleChanged,
       amount: amountChanged,
-      date: new Date(dateChanged),
+      date: dateChanged,
     };
-    props.onSaveExpense(expenseData)
+
+    props.onSaveExpense(expenseData);
   };
+
   return (
     <div className="newExpense">
       <form className="form" onSubmit={fromSubmit}>
@@ -32,20 +38,20 @@ const NewApnaExpense = (props) => {
           type="text"
           className="inputText"
           onChange={onChangeTitleHandler}
-        ></input>
+        />
         <label>Expense Amount</label>
         <input
           type="number"
           className="inputAmount"
           onChange={onChangeAmountHandler}
-        ></input>
-        <br></br>
+        />
+        <br />
         <label>Date</label>
         <input
           type="date"
           className="inputDate"
           onChange={onChangeDateHandler}
-        ></input>
+        />
         <button type="submit" className="button">
           Add Expense
         </button>
@@ -53,4 +59,5 @@ const NewApnaExpense = (props) => {
     </div>
   );
 };
+
 export default NewApnaExpense;

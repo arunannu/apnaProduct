@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Apna.css";
 import ApnaDate from "./ApnaDate";
+
 const ApnaProduct = (props) => {
-  const [amount, setTitle] = useState(props.amount);
+  const [amount, setAmount] = useState(props.amount);
 
   const click = () => {
-    setTitle(100);
-
+    setAmount(100);
     console.log(amount);
   };
 
@@ -18,9 +18,10 @@ const ApnaProduct = (props) => {
         <div id="title">{props.title}</div>
         <div id="amount">${amount}</div>
 
-        <button onClick={click}>Change-Expense</button>
+        <button onClick={click}>Change Expense</button>
       </div>
     </div>
   );
 };
+
 export default ApnaProduct;
