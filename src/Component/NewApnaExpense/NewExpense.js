@@ -1,9 +1,17 @@
 import React from "react";
 import NewApnaExpense from "./NewApnaExpense";
-const NewExpense = () => {
+const NewExpense = (props) => {
+  const onSaveExpenseDataHandler = (NewApnaExpenseChanged)=>{
+    const expenseData ={
+      ...NewApnaExpenseChanged,
+      id: Math.random().toString()
+    }
+    props.onAddExpense(expenseData);
+    
+  }
   return (
     <div>
-      <NewApnaExpense />
+      <NewApnaExpense onSaveExpense={onSaveExpenseDataHandler}/>
     </div>
   );
 };

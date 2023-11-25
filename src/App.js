@@ -8,9 +8,13 @@ const App = () => {
     { title: "Truck", date: new Date(2023, 1, 19), amount: 250000 },
     { title: "JCB", date: new Date(2023, 1, 20), amount: 260000 },
   ];
+  const onAddExpenseHandler1 = expense =>{
+    console.log("in app js")
+    console.log(expense)
+  }
   return (
     <>
-      <NewExpense />
+      <NewExpense onAddExpense={onAddExpenseHandler1} /> 
       <ApnaProduct
         title={productList[0].title}
         date={productList[0].date}

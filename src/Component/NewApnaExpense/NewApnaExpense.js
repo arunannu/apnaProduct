@@ -22,7 +22,7 @@ const NewApnaExpense = (props) => {
       amount: amountChanged,
       date: new Date(dateChanged),
     };
-    console.log(expenseData);
+    props.onSaveExpense(expenseData)
   };
   return (
     <div className="newExpense">
