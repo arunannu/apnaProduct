@@ -1,8 +1,8 @@
 import React from "react";
-import "./Apna.css";
-import ApnaDate from "./ApnaDate";
+import './ExpenseDate'
+import ExpenseDate from "./ExpenseDate";
 
-const ApnaProduct = (props) => {
+const ExpenseItem = (props) => {
   // const [amount, setTitle] = useState(props.amount);
 
   // const click = () => {
@@ -15,7 +15,7 @@ const ApnaProduct = (props) => {
     <div className="outerDiv">
       <div className="main-div" >
         
-        <ApnaDate date={props.date} />
+        <ExpenseDate date={props.date} />
 
         <div id="title">{props.title}</div>
         <div id="amount">${props.amount}</div>
@@ -25,4 +25,4 @@ const ApnaProduct = (props) => {
     </div>
   );
 };
-export default ApnaProduct;
+export default ExpenseItem;

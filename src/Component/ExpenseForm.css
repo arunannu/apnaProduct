@@ -1,0 +1,57 @@
+.newExpense {
+    width: 1000px;
+    height: 200px;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(77, 68, 68);
+    position: relative;
+    left: 300px;
+    margin: 20px;
+    padding-top: 40px;
+  }
+  input {
+    
+    padding: 10px;
+    margin: 20px;
+    border: 3px solid black;
+    
+    border-radius: 10px;
+    
+  }
+  label {
+    padding: 20px;
+  }
+  .button {
+    padding: 7px;
+    position: relative;
+    top: 5px;
+    background-color: gray;
+  }
+  .filter-div{
+    width: 1000px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(77, 68, 68);
+    position: relative;
+    left: 300px;
+    margin: 20px;
+  }
+  #year{
+    font-size: 40px;
+    border: 5px solid black;
+    border-radius: 10px;
+    position: relative;
+    bottom: 105px;
+    background-color:gray;
+    left: 800px;
+  }
+  h4{
+    font-size: 40px;
+    padding-left: 20px;
+  }
+  

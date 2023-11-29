@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./NewApnaExpense.css";
-const NewApnaExpense = (props) => {
+import "./ExpenseForm.css";
+const ExpenseForm = (props) => {
   const [titelChanged, setTitleChanged] = useState("");
   const [amountChanged, setAmountChanged] = useState("");
   const [dateChanged, setDateChanged] = useState("");
@@ -53,4 +53,4 @@ const NewApnaExpense = (props) => {
     </div>
   );
 };
-export default NewApnaExpense;
+export default ExpenseForm;

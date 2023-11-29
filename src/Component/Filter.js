@@ -1,5 +1,5 @@
 import React from "react";
-const FilterYear = (props) => {
+const Filter = (props) => {
   const dropdownChangeHandler = (event) => {
     props.onChangeFilter(event.target.value);
   };
@@ -15,4 +15,4 @@ const FilterYear = (props) => {
     </div>
   );
 };
-export default FilterYear;
+export default Filter;
